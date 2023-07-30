@@ -69,7 +69,7 @@ function App() {
                       {movie.title}
                     </h1>
                     <div className="flex justify-between mt-2">
-                      <div>
+                      <div className="flex items-center text-yellow-500">
                         <ion-icon name="star"></ion-icon>
                         <span className="ml-2">{movie.vote_average}</span>
                       </div>
