@@ -60,7 +60,7 @@ const MovieDetail = () => {
   return (
     <>
       {!loading ? (
-        <div className="container my-10 md:my-12 max-w-[1000px]">
+        <div className="container my-10 md:my-12 max-w-screen-lg">
           <Link
             to={"/"}
             className="text-white flex items-center gap-2 mb-8 hover:translate-x-2 transition duration-300"
@@ -87,7 +87,9 @@ const MovieDetail = () => {
                 Release date:{" "}
                 <span className="font-bold">{movie.release_date}</span>
               </span>
-              <p className="text-slate-300 my-4">{movie.overview}</p>
+              <p className="text-slate-300 my-4 whitespace-normal break-words">
+                {movie.overview}
+              </p>
               <div className="flex items-center gap-4 my-6">
                 <div className="flex items-center gap-2 text-yellow-500 text-sm">
                   <ion-icon name="star"></ion-icon>
