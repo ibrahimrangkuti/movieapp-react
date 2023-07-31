@@ -60,7 +60,7 @@ const MovieDetail = () => {
   return (
     <>
       {!loading ? (
-        <div className="container my-10 md:my-12">
+        <div className="container my-10 md:my-12 max-w-[1000px]">
           <Link
             to={"/"}
             className="text-white flex items-center gap-2 mb-8 hover:translate-x-2 transition duration-300"
@@ -68,7 +68,7 @@ const MovieDetail = () => {
             <ion-icon name="arrow-back" />
             Kembali
           </Link>
-          <div className="flex flex-col md:flex-row gap-6 md:gap-8 max-w-[1000px]">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8">
             <img
               src={`https://image.tmdb.org/t/p/w500/` + movie.poster_path}
               alt=""
