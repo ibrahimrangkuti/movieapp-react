@@ -68,7 +68,7 @@ const MovieDetail = () => {
             <ion-icon name="arrow-back" />
             Kembali
           </Link>
-          <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8 max-w-screen-md">
             <img
               src={`https://image.tmdb.org/t/p/w500/` + movie.poster_path}
               alt=""
